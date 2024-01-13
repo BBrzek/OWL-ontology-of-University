@@ -1,0 +1,47 @@
+# SELECT 1
+# Wymień wszystkie kursy specjalności, które mają 4 punkty mocy
+
+PREFIX ucz: <http://www.semanticweb.org/bbrzek/ontologies/2024/0/ontologia-uczelni#>
+
+SELECT ?x
+ WHERE {
+	?x a  ucz:KursSpecjalnosci.
+	?x ucz:punktyECTS ?y.
+	FILTER(?y=4)
+}
+
+
+
+
+# SELECT 2
+# napisz zapytanie zwracające liczbę kierunków na każdym ze stopni (pierwszy, drugi, trzeci)
+
+PREFIX ucz: <http://www.semanticweb.org/bbrzek/ontologies/2024/0/ontologia-uczelni#>
+
+SELECT ?stopień   (COUNT(?y) AS ?liczbaKierunków)
+ WHERE {
+	?stopień a  ucz:Studia.
+	?stopień ucz:jestOferowany ?y
+}
+GROUP BY ?stopień
+
+# SELECT 3
+# Wymień wszystkich studentów, którzy studiują informatykę w trybie dziennym
+PREFIX ucz: <http://www.semanticweb.org/bbrzek/ontologies/2024/0/ontologia-uczelni#>
+
+SELECT ?student  
+ WHERE {
+	?student a  ucz:StudentDzienny.
+	?student ucz:studiujeNa ucz:Informatyka
+}
+
+#SELECT 4 
+# Wymień wszystkie kursy prowadzone przez pracownika dydaktycznego o nazwisku Hymel
+PREFIX ucz: <http://www.semanticweb.org/bbrzek/ontologies/2024/0/ontologia-uczelni#>
+
+SELECT DISTINCT ?kurs
+WHERE {
+  ?kurs a ucz:Kursy.
+  ?kurs ucz:prowadzonyPrzez ?pracownik.
+  ?pracownik ucz:nazwisko "Hymel"
+}
