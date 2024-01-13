@@ -1,0 +1,285 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/bbrzek/ontologies/2024/0/ontologia-uczelni"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/bbrzek/ontologies/2024/0/ontologia-uczelni">
+    <Prefix name="" IRI="http://www.semanticweb.org/bbrzek/ontologies/2024/0/ontologia-uczelni/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Cwiczenia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FormaKursu"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Katedra"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Kierunek"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KursPodstawowy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KursSpecjalnosci"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KursWyboru"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Kursy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Laboratoria"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Osoba"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pracownik"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PracownikAdministracji"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PracownikBiurowy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PracownikDoktor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PracownikDoktorHabilitowany"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PracownikDoktorHabilitowanyInzynier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PracownikDoktorInzynier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PracownikDydaktyczny"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PracownikMagister"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PracownikMagisterInzynier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PracownikProfesor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PracownikProfesorNadzwyczajny"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PracownikProfesorZwyczajny"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PracownikSystemowy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SalaDydaktyczna"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SalaDydaktycznaAula"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SalaDydaktycznaCwiczeniowa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SalaDydaktycznaInformatyczna"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SalaDydaktycznaWykladowa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Specjalnosc"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Student"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StudentDzienny"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StudentZaoczny"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Studia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StudiaDoktoranckie"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StudiaInżynierskie"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StudiaLicencjackie"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StudiaMagisterskie"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StudiaPodyplomowe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Uczelnia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wydzial"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wyklad"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#jestDostepnaNa"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Cwiczenia"/>
+        <Class IRI="#FormaKursu"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KursPodstawowy"/>
+        <Class IRI="#Kursy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KursSpecjalnosci"/>
+        <Class IRI="#Kursy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KursWyboru"/>
+        <Class IRI="#Kursy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Laboratoria"/>
+        <Class IRI="#FormaKursu"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pracownik"/>
+        <Class IRI="#Osoba"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PracownikAdministracji"/>
+        <Class IRI="#Pracownik"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PracownikBiurowy"/>
+        <Class IRI="#PracownikAdministracji"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PracownikDoktor"/>
+        <Class IRI="#PracownikDydaktyczny"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PracownikDoktorHabilitowany"/>
+        <Class IRI="#PracownikDoktor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PracownikDoktorHabilitowanyInzynier"/>
+        <Class IRI="#PracownikDoktorHabilitowany"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PracownikDoktorInzynier"/>
+        <Class IRI="#PracownikDoktor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PracownikDydaktyczny"/>
+        <Class IRI="#Pracownik"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PracownikMagister"/>
+        <Class IRI="#PracownikDydaktyczny"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PracownikMagisterInzynier"/>
+        <Class IRI="#PracownikMagister"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PracownikProfesor"/>
+        <Class IRI="#PracownikDydaktyczny"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PracownikProfesorNadzwyczajny"/>
+        <Class IRI="#PracownikProfesor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PracownikProfesorZwyczajny"/>
+        <Class IRI="#PracownikProfesor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PracownikSystemowy"/>
+        <Class IRI="#PracownikAdministracji"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SalaDydaktycznaAula"/>
+        <Class IRI="#SalaDydaktyczna"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SalaDydaktycznaCwiczeniowa"/>
+        <Class IRI="#SalaDydaktyczna"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SalaDydaktycznaInformatyczna"/>
+        <Class IRI="#SalaDydaktyczna"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SalaDydaktycznaWykladowa"/>
+        <Class IRI="#SalaDydaktyczna"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Student"/>
+        <Class IRI="#Osoba"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StudentDzienny"/>
+        <Class IRI="#Student"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StudentZaoczny"/>
+        <Class IRI="#Student"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StudiaDoktoranckie"/>
+        <Class IRI="#Studia"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StudiaInżynierskie"/>
+        <Class IRI="#Studia"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StudiaLicencjackie"/>
+        <Class IRI="#Studia"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StudiaMagisterskie"/>
+        <Class IRI="#Studia"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StudiaPodyplomowe"/>
+        <Class IRI="#Studia"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wyklad"/>
+        <Class IRI="#FormaKursu"/>
+    </SubClassOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#jestDostepnaNa"/>
+        <Class IRI="#Specjalnosc"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#jestDostepnaNa"/>
+        <Class IRI="#Kierunek"/>
+    </ObjectPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
