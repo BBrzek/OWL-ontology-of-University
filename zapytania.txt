@@ -1,3 +1,10 @@
+# Skład:
+#- Bartłomiej Brzęk
+#- Natalia Krawczyk
+#- Piotr Pelan
+
+
+
 # SELECT 1
 # Wymień wszystkie kursy specjalności, które mają 4 punkty mocy
 
