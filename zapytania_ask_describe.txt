@@ -1,5 +1,5 @@
 # 1 ASK
-# Wymień wszystkich studentów studiujących na kierunku zawierającym w nazwie "Informatyka"
+# Sprawdź, czy istnieje student studiujący na kierunku zawierającym w nazwie "Informatyka"
 
 PREFIX ucz: <http://www.semanticweb.org/bbrzek/ontologies/2024/0/ontologia-uczelni#>
 
@@ -13,7 +13,7 @@ WHERE {
 
 
 # 2 ASK
-# Wymień wszystkie kursy prowadzone przez Jadwiga_Kowalska lub Mariusz_Hymel
+# Sprawdź, czy istnieją kursy prowadzone przez Jadwiga_Kowalska lub Mariusz_Hymel
 
 PREFIX ucz: <http://www.semanticweb.org/bbrzek/ontologies/2024/0/ontologia-uczelni#>
 
@@ -26,7 +26,7 @@ WHERE {
 
 
 # 3 DESCRIBE
-# Wymień wszystkie kursy o liczbie ECTS 5 i wyżej
+# Pokaż wszystko co wiesz o kursach o liczbie ECTS 5 i wyżej
 
 PREFIX ucz: <http://www.semanticweb.org/bbrzek/ontologies/2024/0/ontologia-uczelni#>
 
