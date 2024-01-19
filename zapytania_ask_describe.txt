@@ -1,0 +1,38 @@
+# 1 ASK
+# Wymień wszystkich studentów studiujących na kierunku zawierającym w nazwie "Informatyka"
+
+PREFIX ucz: <http://www.semanticweb.org/bbrzek/ontologies/2024/0/ontologia-uczelni#>
+
+ASK ?student ?course
+WHERE {
+  ?student a ucz:Student.
+  ?student ucz:studiujeNa ?course.
+  ?course a ucz:Kierunek.
+  FILTER (regex(str(?course), "Informatyka", "i"))
+}
+
+
+# 2 ASK
+# Wymień wszystkie kursy prowadzone przez Jadwiga_Kowalska lub Mariusz_Hymel
+
+PREFIX ucz: <http://www.semanticweb.org/bbrzek/ontologies/2024/0/ontologia-uczelni#>
+
+ASK ?course ?lecturer
+WHERE {
+  ?course a ucz:Kursy.
+  ?course ucz:prowadzonyPrzez ?lecturer.
+  FILTER(?lecturer = ucz:Jadwiga_Kowalska || ?lecturer = ucz:Mariusz_Hymel)
+}
+
+
+# 3 DESCRIBE
+# Wymień wszystkie kursy o liczbie ECTS 5 i wyżej
+
+PREFIX ucz: <http://www.semanticweb.org/bbrzek/ontologies/2024/0/ontologia-uczelni#>
+
+DESCRIBE ?course ?ects
+WHERE {
+  ?course a ucz:Kursy.
+  ?course ucz:punktyECTS ?ects.
+  FILTER(?ects > 5)
+}
